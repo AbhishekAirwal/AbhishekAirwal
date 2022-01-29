@@ -1,0 +1,10 @@
+s = 'The quick Brow Fox'
+count_upper = 0
+lower_count = 0
+for i in s:
+    if i.isupper():
+        count_upper+=1
+    else:
+        lower_count+=1
+print('total upper count',count_upper)
+print('total lower count',lower_count)
