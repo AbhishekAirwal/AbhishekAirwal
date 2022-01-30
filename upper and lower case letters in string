@@ -1,10 +1,14 @@
-s = 'The quick Brow Fox'
-count_upper = 0
-lower_count = 0
-for i in s:
-    if i.isupper():
-        count_upper+=1
-    else:
-        lower_count+=1
-print('total upper count',count_upper)
-print('total lower count',lower_count)
+def string_test(s):
+    d={"UPPER_COUNT":0, "LOWER_COUNT":0}
+    for c in s:
+        if c.isupper():
+           d["UPPER_COUNT"]+=1
+        elif c.islower():
+           d["LOWER_COUNT"]+=1
+        else:
+           pass
+    print ("Original String : ", s)
+    print ("Total Upper Count : ", d["UPPER_COUNT"])
+    print ("Total Lower Count : ", d["LOWER_COUNT"])
+
+string_test('The quick Brow Fox')
