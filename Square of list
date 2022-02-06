@@ -1,0 +1,6 @@
+def square_num(n):
+    return n * n
+num = [4, 5, 2, 9]
+print("Original List: ",num)
+result = map(square_num, num)
+print("Square Of List:",list(result))
